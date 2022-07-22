@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { VStack, Heading, Icon , useTheme } from 'native-base'; // importo biblioteca icons confi. Expo-Cli - https://docs.nativebase.io/install-expo 
 import { Envelope, Key, SelectionSlash } from 'phosphor-react-native';
-                                                    // [VStack] -empilho elementos na vertical                                            
+                                                                                             
 import Logo from '../assets/logo_primary.svg'; 
 
 // import de componente
@@ -52,3 +52,5 @@ export function SignIn(){
         </VStack>
     )
 }
+
+  // [VStack] -empilho elementos na vertical 

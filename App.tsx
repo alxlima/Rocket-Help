@@ -2,7 +2,9 @@ import { NativeBaseProvider, StatusBar } from 'native-base'; // importo bibliote
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';// importa font Roboto - instalado na aplicação
 
 import { THEME } from './src/styles/theme'; // importo a estilização cor/fonts de thema nativeBase persolalizado ao projeto. 
-import { SignIn } from './src/screens/SignIn';
+
+//import { SignIn } from './src/screens/SignIn';// comentado para testar home
+import { Home } from './src/screens/Home'; 
 import { Loading } from './src/components/Loading';
 
 export default function App() {
@@ -10,13 +12,13 @@ export default function App() {
 
   return (
      <NativeBaseProvider theme={THEME}>
-      < StatusBar
+      <StatusBar
         barStyle="light-content" 
         backgroundColor="transparent"
         translucent
        />
 
-       { fontsLoaded ? <SignIn /> : <Loading />}
+       { fontsLoaded ? <Home /> : <Loading />}
        
      </NativeBaseProvider>
   );
